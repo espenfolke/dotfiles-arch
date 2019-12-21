@@ -30,20 +30,52 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-
-set $refresh_i3status killall -SIGUSR1 i3status
-
+###############################################
 # brightness Keybindings
+###############################################
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec  5
 
-# Use pactl to adjust volume in amixer.
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle && amixer -q set Speaker toggle && amixer -q set Headphone toggel &&  $refresh_i3status
+###############################################
+# Volume control
+###############################################
+# Path to volume control, without trailing slash
+set $volumepath ~/.scripts/i3-volume/volume
+
+# Command for the status line
+#   ie: i3blocks, i3status
+set $statuscmd i3status
+
+# Signal used to update the status line
+#   i3blocks uses SIGRTMIN+10 by default
+#   i3status uses SIGUSR1 by default
+set $statussig SIGUSR1
+set $refresh_i3status killall -SIGUSR1 i3status
+
+# Amount to increase/decrease volume as a percentage
+set $volumestep 5
+
+# alsa-utils settings
+#
+# To configure a default card, see https://www.alsa-project.org/main/index.php/Asoundrc
+#
+# Card number to control.
+#   If not specified, i3-volume will let `amixer` use a default.
+#   List cards: aplay -l
+#set $alsacard 1
+
+# append "-c $alsacard" without quotes to override default card
+bindsym $mod+equal exec --no-startup-id $volumepath -anp -i $volumestep -t $statuscmd -u $statussig && $refresh_i3status
+bindsym $mod+minus exec --no-startup-id $volumepath -anp -d $volumestep -t $statuscmd -u $statussig && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id $volumepath -anp -i $volumestep -t $statuscmd -u $statussig && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath -anp -d $volumestep -t $statuscmd -u $statussig && $refresh_i3status
+bindsym XF86AudioMute        exec --no-startup-id $volumepath -amn -t $statuscmd -u $statussig && $refresh_i3status
+
 bindsym XF86AudioMicMute exec --no-startup-id amixer -q set Mic toggle && $refresh_i3status
 
+###################################################
 # i3 Gaps
+###################################################
 for_window [class="^.*"] border pixel 0
 gaps inner 8
 gaps outer 10
@@ -156,12 +188,12 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # app specific
 
-bindsym $mod+Ctrl+f exec --no-startup-id firefox
+bindsym $mod+Shift+f exec --no-startup-id firefox
  
 assign [class=(?i)KeePassXC] $ws9
 assign [class=(?i)Vmware-view] $ws10
 assign [class=(?i)firefox] $ws2
-for_window [class=(?i)firefox] focus
+#for_window [class=(?i)firefox] focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
