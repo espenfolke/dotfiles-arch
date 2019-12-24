@@ -1,0 +1,41 @@
+[8836:1223/011134.249376:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+(electron) 'setResizable function' is deprecated and will be removed. Please use 'resizable property' instead.
+(electron) 'setMaximizable function' is deprecated and will be removed. Please use 'maximizable property' instead.
+(electron) 'setZoomLevel function' is deprecated and will be removed. Please use 'zoomLevel property' instead.
+(electron) 'getZoomLevel function' is deprecated and will be removed. Please use 'zoomLevel property' instead.
+libsecret-Message: 01:11:35.496: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+libsecret-Message: 01:11:35.500: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:get-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+libsecret-Message: 01:11:35.500: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:get-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+Error occurred in handler for 'keychain:get-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+libsecret-Message: 01:11:35.554: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:get-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+libsecret-Message: 01:11:35.558: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:delete-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+libsecret-Message: 01:12:13.404: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+libsecret-Message: 01:12:13.405: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:set-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+Error occurred in handler for 'keychain:set-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+libsecret-Message: 01:12:13.424: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:delete-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+libsecret-Message: 01:12:13.428: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+libsecret-Message: 01:12:13.428: Remote error from secret service: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.secrets was not provided by any .service files
+Error occurred in handler for 'keychain:delete-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+Error occurred in handler for 'keychain:get-password': [Error: The name org.freedesktop.secrets was not provided by any .service files]
+(electron) 'setBadgeCount function' is deprecated and will be removed. Please use 'badgeCount property' instead.
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+[8836:1223/011220.068234:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011222.331182:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011223.197824:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011223.341319:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011224.357870:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011224.554500:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011224.618085:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011224.646985:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/011224.665474:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/012521.533013:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/012522.954467:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/012523.396527:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[8836:1223/012524.478133:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command

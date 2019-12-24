@@ -1,0 +1,10 @@
+2019/12/23-01:12:13.264 227d Reusing MANIFEST /home/espen/dotfiles/config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/12/23-01:12:13.265 227d Recovering log #4
+2019/12/23-01:12:13.297 227d Reusing old log /home/espen/dotfiles/config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000004.log 
+2019/12/23-01:12:23.852 2303 Level-0 table #8: started
+2019/12/23-01:12:23.891 2303 Level-0 table #8: 1465002 bytes OK
+2019/12/23-01:12:23.911 2303 Delete type=0 #4
+2019/12/23-01:12:26.005 2303 Compacting 1@1 + 1@2 files
+2019/12/23-01:12:26.049 2303 Generated table #9@1: 4364 keys, 1002106 bytes
+2019/12/23-01:12:26.049 2303 Compacted 1@1 + 1@2 files => 1002106 bytes
+2019/12/23-01:12:26.065 2303 compacted to: files[ 0 0 1 0 0 0 0 ]

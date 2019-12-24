@@ -30,6 +30,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Clipboard Manager
+exec --no-startup-id anamnesis --start
+
+# Wallpaper
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper
+
 ###############################################
 # brightness Keybindings
 ###############################################
@@ -165,7 +171,7 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 "8: Skype "
 set $ws9 "9: Keepass "
 set $ws10 "10: Work"
 
@@ -203,6 +209,7 @@ bindsym $mod+Shift+f exec --no-startup-id firefox
 assign [class=(?i)KeePassXC] $ws9
 assign [class=(?i)Vmware-view] $ws10
 assign [class=(?i)firefox] $ws2
+assign [class=(?i)Skype] $ws8
 #for_window [class=(?i)firefox] focus
 
 # reload the configuration file
@@ -275,7 +282,7 @@ smart_borders on
 #autostart programs on specific workspace
 # exec ~/.scripts/inverse-scroll.sh
 # exec ~/.scripts/tap-to-click.sh
-exec --no-startup-id i3-msg -t $ws3; exec ~/.config/i3/ranger.sh
+#exec --no-startup-id i3-msg -t $ws3; exec ~/.config/i3/ranger.sh
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000' 
 # exec --no-startup-id i3-msg -t $ws2; exec firefox
 

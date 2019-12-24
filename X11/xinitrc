@@ -37,12 +37,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 setxkbmap gb
-#setxkbmap -l /usr/local/share/kbd/keymaps alt.is.in.ctrl.uk.map
 
-feh --bg-scale ~/Pictures/10-8.jpg &
-
-pulseaudio --start
-picom &
-urxvt &
+export TERMINAL=kitty
+kitty &
 exec i3
 
