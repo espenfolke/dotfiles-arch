@@ -33,6 +33,8 @@ exec --no-startup-id nm-applet
 # Clipboard Manager
 exec --no-startup-id anamnesis --start
 
+exec --no-startup-id emacs --daemon
+
 # Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper
 
@@ -275,14 +277,14 @@ bar {
   position top
   colors {
     # <bar>
-    background	#222222
+    background	#101010
     separator	#444444
-    statusline	#666666
+    statusline	#ffffff
 
     # <workclass>	<border> <bg> <text>
-    focused_workspace	#da2263 #d70a53 #ffffff
+    focused_workspace	#1A237E #1A237E #ffffff
     active_workspace	#565656 #444444 #ffffff
-    inactive_workspace	#373737 #222222 #888888
+    inactive_workspace	#101010 #101010 #888888
     urgent_workspace	#ec7ea4 #eb709b #ffffff
   }
 
