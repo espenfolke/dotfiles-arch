@@ -1,0 +1,12 @@
+#!/bin/bash
+
+case $BLOCK_BUTTON in
+    1) 
+      notify-send "Left"
+      ;;
+    3)
+      echo "Right"
+      ;;
+esac
+
+

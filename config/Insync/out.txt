@@ -1,0 +1,7 @@
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-espen'
+QXcbIntegration: Cannot create platform OpenGL context, neither GLX nor EGL are enabled
+libpng warning: iCCP: known incorrect sRGB profile
+WebEngineContext used before QtWebEngine::initialize() or OpenGL context creation failed.
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile

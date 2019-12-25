@@ -2,3 +2,5 @@
 [Default Applications]
 x-scheme-handler/mailspring=mailspring.desktop
 inode/directory=lf.desktop
+text/plain=vim.desktop;
+application/x-desktop=vim.desktop;

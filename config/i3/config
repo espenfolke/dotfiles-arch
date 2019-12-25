@@ -107,8 +107,11 @@ bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 # Rofi
 bindsym $mod+space exec --no-startup-id "rofi -combi-modi window,drun,ssh -theme dmenu -show combi"
 
+# Dunst notifications
+exec dunst
+
 # Picom
-exec --no-startup-id picom -f --no-fading-openclose --config ~/.config/picom/picom.conf
+exec picom -f --no-fading-openclose --config ~/.config/picom/picom.conf
 bindsym $mod+p exec kill $(pidof picom)
 bindsym $mod+Shift+p exec picom -f --no-fading-openclose --config ~/.config/picom/picom.conf
 
@@ -157,10 +160,13 @@ bindsym $mod+Shift+space floating toggle
 #bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# Create qr of top item on the clipboard
+bindsym $mod+backslash  exec --no-startup-id ~/.scripts/qrclip.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -263,14 +269,29 @@ mode "$mode_system" {
 }
 bindsym $mod+Escape mode "$mode_system"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# i3 bar section
 bar {
-	position top
-	height 24
-        status_command i3status
-}
+  status_command i3blocks
+  position top
+  colors {
+    # <bar>
+    background	#222222
+    separator	#444444
+    statusline	#666666
 
+    # <workclass>	<border> <bg> <text>
+    focused_workspace	#da2263 #d70a53 #ffffff
+    active_workspace	#565656 #444444 #ffffff
+    inactive_workspace	#373737 #222222 #888888
+    urgent_workspace	#ec7ea4 #eb709b #ffffff
+  }
+
+  # tray_output none|primary|<output>
+  tray_output primary
+
+  # separator between bar sections
+  #separator_symbol " | "
+}
 
 # Only enable gaps on a workspace when there is at least one container
 #smart_gaps on
