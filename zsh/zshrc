@@ -8,9 +8,9 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
- export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
-fi
+#if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
+# export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
+#fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/espen/dotfiles/oh-my-zsh"
@@ -111,6 +111,8 @@ export LANG=en_GB.UTF-8
 alias ls="exa"
 alias ll="ls -l"
 alias vi="vim"
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
