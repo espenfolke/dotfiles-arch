@@ -1,6 +1,8 @@
-
 [Default Applications]
 x-scheme-handler/mailspring=mailspring.desktop
 inode/directory=lf.desktop
 text/plain=vim.desktop;
 application/x-desktop=vim.desktop;
+
+[Added Associations]
+application/pdf=mupdf.desktop;org.pwmt.zathura.desktop;

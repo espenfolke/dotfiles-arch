@@ -36,7 +36,7 @@ markup=pango
 ### Modules defines
 ###
 [online]
-command=~/.config/i3blocks-modules/bin/online
+command=~/.config/i3blocks-modules/bin/online -f  '{country} {ip}'
 interval=2
 
 [wifi]

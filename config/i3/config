@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Fira Code 9 
+font pango:Fira Code 8 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -33,7 +33,10 @@ exec --no-startup-id nm-applet
 # Clipboard Manager
 exec --no-startup-id anamnesis --start
 
+# Start Emacs 
 exec --no-startup-id emacs --daemon
+
+exec --no-startup-id google-drive-ocamlfuse -label pishias92 ~/GoogleDrive/pishias92
 
 # Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper
@@ -52,13 +55,14 @@ set $volumepath ~/.scripts/i3-volume/volume
 
 # Command for the status line
 #   ie: i3blocks, i3status
-set $statuscmd i3status
+set $statuscmd i3blocks
 
 # Signal used to update the status line
 #   i3blocks uses SIGRTMIN+10 by default
 #   i3status uses SIGUSR1 by default
 set $statussig SIGUSR1
-set $refresh_i3status killall -SIGUSR1 i3status
+#set $refresh_i3status killall -SIGUSR1 i3status
+set $refresh_i3status killall -SIGRTWIN+10 i3blocks
 
 # Amount to increase/decrease volume as a percentage
 set $volumestep 2
@@ -285,7 +289,7 @@ bar {
     focused_workspace	#1A237E #1A237E #ffffff
     active_workspace	#565656 #444444 #ffffff
     inactive_workspace	#101010 #101010 #888888
-    urgent_workspace	#ec7ea4 #eb709b #ffffff
+    urgent_workspace	#C5CAE9 #C5CAE9 #000000
   }
 
   # tray_output none|primary|<output>
