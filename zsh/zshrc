@@ -13,7 +13,7 @@ fi
 #fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/espen/dotfiles/oh-my-zsh"
+export ZSH="/home/espen/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,7 +126,7 @@ compinit
 _comp_options+=(globdots)
 
 # Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+#kitty + complete setup zsh | source /dev/stdin
 
 # Fancy ASCII art
 # neofetch | lolcat
