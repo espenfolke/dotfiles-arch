@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH
 
 #if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
 # export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
@@ -92,7 +92,7 @@ export LANG=en_GB.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -130,3 +130,28 @@ _comp_options+=(globdots)
 
 # Fancy ASCII art
 # neofetch | lolcat
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/espen/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/espen/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/espen/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/espen/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH=$PATH:/opt/q/l32
+export QHOME=/opt/q
+alias q="rlwrap /opt/q/l32/q"
+
+if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
+ export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
+fi
+
+

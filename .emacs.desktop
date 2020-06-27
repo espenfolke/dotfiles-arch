@@ -1,0 +1,32 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jan 14 00:58:13 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24093 4645 6331 906000) (desktop . "208") "espen@arch" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-CTDB-Fira Code-normal-normal-normal-*-13-*-*-*-d-0-iso10646-1") (font-parameter . "Fira Code 10") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#eaeaea") (background-color . "#000000") (mouse-color . "black") (border-color . "#424242") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#d54e53") (sticky) (environment) (frameset--id . "B383-EDDA-BC7D-83F7") (frameset--mini t . t) (height . 36) (width . 80) (modeline . t) (unsplittable) (left . 445) (top . 120) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 80) (min-pixel-height-ignore . 48) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 16) (min-pixel-width-safe . 16)) leaf (pixel-width . 656) (pixel-height . 560) (total-width . 82) (total-height . 35) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Customize Group: Emacs*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 81) (start . 1))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history nil)
+(setq face-name-history nil)
+(setq file-name-history '("/home/espen/dotfiles-arch/" "~/.emacs.d/custom.el" "~/MEGAsync/code/clojure/cronies/src/cronies/core.clj" "/usr/share/emacs/26.3/etc/NEWS" "~/MEGAsync/code/clojure/cronies/test/cronies/parser_test.clj" "~/MEGAsync/code/clojure/cronies/src/cronies/parser.clj" "~/.emacs.d/custom.el" "~/MEGAsync/code/clojure/cronies/src/cronies/core.clj" "/usr/share/emacs/26.3/etc/NEWS" "~/MEGAsync/code/clojure/cronies/test/cronies/parser_test.clj" "/home/espen/MEGAsync/code/clojure/cronies/src/cronies/parser.clj" "/usr/share/emacs/26.3/etc/NEWS" "~/MEGAsync/code/clojure/cronies/-horizontally" "/home/espen/MEGAsync/code/clojure/cronies/test/cronies/parser_test.clj" "/home/espen/MEGAsync/code/clojure/cronies/test/cronies/core_test.clj" "/home/espen/MEGAsync/code/clojure/cronies/src/cronies/core.clj" "/home/espen/MEGAsync/code/clojure/" "~/.emacs.d/custom.el" "/home/espen/MEGAsync/code/clojure/demo/src/demo/core.cljs" "/home/espen/.emacs.d/custom.el" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/parinfer-20180904.844/parinfer-autoloads.el" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-26.3/nyan-mode-20170423.740/nyan-mode-autoloads.el" "~/.emacs.d/custom.el"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq ivy-history '("pa" "parin" "*" "parse"))
+(setq minibuffer-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq search-ring '("parinfrt" "evil-mode" "evil" "parin" "nyan"))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
